@@ -39,7 +39,7 @@ class myva(wx.Frame):
 				print("Could not request results from Google Speech Recognition service; {0}".format(e))
 		try:
 		#wolframalpha
-		app_id= "P3VHJY-W95YUQL25A"
+		app_id= "Put your own app ID"
 		client= wolframalpha.Client(app_id)
 		output= client.query(question)
 		ans = next(output.results).text
